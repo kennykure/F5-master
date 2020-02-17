@@ -1,0 +1,32 @@
+﻿@model VIPSandPool.Data.Models.VirtualServer
+
+@{
+    ViewBag.Title = "Details";
+}
+
+    <h2>Details for @Html.DisplayFor(model => model.Name)</h2>
+
+<div>
+    <h4>VirtualServer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Pool)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pool)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
